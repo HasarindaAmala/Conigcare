@@ -1,5 +1,8 @@
 
 import 'package:conigcare/homepage.dart';
+import 'package:conigcare/learn.dart';
+import 'package:conigcare/reusable.dart';
+import 'package:conigcare/speak.dart';
 import 'package:flutter/material.dart';
 
 class ModePage extends StatefulWidget {
@@ -166,11 +169,11 @@ class _ModePageState extends State<ModePage> {
 
                 Row(
                     children: [
-                      // BlockSet1(context,"LEARN",'1.png',LearnPage()),
-                      // SizedBox(
-                      //   width: MediaQuery.of(context).size.width*0.05,
-                      // ),
-                      // BlockSet1(context,"SPEAK",'1.png',SpeakPage()),
+                      BlockSet1(context,"LEARN",'Group 1.png',LearnPage()),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width*0.05,
+                      ),
+                      BlockSet1(context,"SPEAK",'icon-park-outline_people-speak.png',SpeakPage()),
                     ]
                 )
               ],
