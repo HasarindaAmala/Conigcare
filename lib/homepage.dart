@@ -34,26 +34,30 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             height: MediaQuery.of(context).size.height*0.55,),
-                          Text('CogniCare',
-                            // textAlign:  TextAlign.start,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: MediaQuery.of(context).size.height*0.05),),
-                          SizedBox(
-                            height: MediaQuery.of(context).size.height*0.02,),
+                          Positioned(
 
-                          Text('Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.Qorem ipsum dolor sit amet, consectetur adipiscing elitQorem ipsum dolor sit amet, consectetur adipiscing elit,\n',
+                            child: Text('CogniCare',
+
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: MediaQuery.of(context).size.height*0.07),),
+                          ),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height*0.05,),
+
+                          Text('Revolutionizing accessibility and learning, our app is a gateway to the world of sign language. Seamlessly bridging communication gaps, it empowers users to effortlessly understand and express themselves through sign language.\n',
                             textAlign:  TextAlign.start,
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: MediaQuery.of(context).size.height*0.02),
+                                fontSize: MediaQuery.of(context).size.height*0.018),
                           ),
-                          // SizedBox(
-                          //   height: MediaQuery.of(context).size.height*0.03,),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height*0.01,),
                           Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
